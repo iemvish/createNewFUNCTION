@@ -1,0 +1,55 @@
+.student-form{
+    background-color: #1091b5;
+}
+.form-contact{
+    padding-bottom: 15px;
+}
+.form-input-block{
+    padding: 50px;
+    padding-bottom: 0;
+}
+.form-input-block{
+    background-color: aliceblue;
+}
+table{
+    margin-top: 10px;
+}
+h1{
+    border-bottom: 2px solid;
+}
+
+table th,td{
+    text-align: start;
+}
+.main-table th,td{
+    text-align: center;
+}
+table button{
+    border: none;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+table tr{
+    background-color: #ffffff;
+   
+}
+.editBtn:hover{
+    color: #00ff00;
+}
+.deleteBtn:hover{
+    color:#ff0000;
+}
+.viewBtn:hover{
+    color: #0000ff;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
+
+  .star{
+    color: red;
+  }

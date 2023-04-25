@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta firstname="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.min.js"></script>
+   </head>
+   <body>
+      <div class="student-form">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center shadow p-3 text-white">REGISTRATION FORM</h1>
+               <div class="form-input-block">
+                  <form action="" id="myForm" name="forms">
+                     <div class="form-contact">
+                        <div class="row">
+                           <div class="col-sm-6 ">
+                              <label for="fname" class="form-label ">First Name</label><span class="star">
+                              *</span>
+                              <input type="text" class="form-control" id="fname">
+                           </div>
+                           <div class="col-sm-6">
+                              <label for="lname" class="form-label">Last Name</label><span class="star">
+                              *</span>
+                              <input type="text" class="form-control" id="lname">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-contact">
+                        <div class="row">
+                           <div class="col-sm-6">
+                              <label for="gender" class="pb-2">Gender</label><span class="star"> *</span> <br>
+                              <div class="form-check-inline">
+                                 <input class="form-check-input" type="radio" name="gender" id="male"
+                                    value="male">
+                                 <label class="form-check-label" for="male">
+                                 Male
+                                 </label>
+                              </div>
+                              <div class="form-check-inline">
+                                 <input class="form-check-input" type="radio" name="gender" id="female"
+                                    value="female">
+                                 <label class="form-check-label" for="female">
+                                 Female
+                                 </label>
+                              </div>
+                              <div class="form-check-inline">
+                                 <input class="form-check-input" type="radio" name="gender" id="other"
+                                    value="other">
+                                 <label class="form-check-label" for="other">
+                                 Other
+                                 </label>
+                              </div>
+                              <div class="gender-error">
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <label for="age" class="form-label">Age</label><span class="star"> *</span>
+                              <select class="form-select" aria-label="Default select example" id="age">
+                                 <option value="">How old are you!</option>
+                                 <script>
+                                    for (i = 18; i <= 55; i++) {
+                                        document.write('<option value="' + i + '">' + i + '</option>');
+                                    }
+                                 </script>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-contact">
+                        <div class="row">
+                           <div class="col-sm-6">
+                              <label for="inputContact" class="form-label">Phone number:</label><span
+                                 class="star"> *</span>
+                              <div class="input-group">
+                                 <span class="input-group-text">+91</span>
+                                 <input type="text" class="form-control" id="inputContact"
+                                    placeholder="Enter your phone number" aria-label="Userfirstname"
+                                    aria-describedby="inputContact" maxlength="10">
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <label for="date" class="form-label">Admision Date:</label><span class="star">
+                              *</span>
+                              <input type="date" class="form-control" id="date" name="date">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-contact">
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <label for="tech" class="form-label">Tech</label><span class="star"> *</span>
+                              <select class="form-select" aria-label="Default select example" id="tech">
+                                 <option value="">Select Tech</option>
+                                 <option value="PHP/LARAVEL">PHP/LARAVEL</option>
+                                 <option value="REACT JS">REACT JS</option>
+                                 <option value="NODE JS">NODE JS</option>
+                                 <option value="ANGULAR JS">ANGULAR JS</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-contact">
+                        <div class="col-sm-12">
+                           <label for="flexCheckDefault" class="form-label">Education</label><span
+                              class="star"> *</span><br>
+                           <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Matric" id="matric"
+                                 name="education">
+                              <label class="form-check-label" for="matric">
+                              Matric
+                              </label>
+                           </div>
+                           <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Plus Two" id="plus_two"
+                                 name="education">
+                              <label class="form-check-label" for="plus_two">
+                              Plus Two
+                              </label>
+                           </div>
+                           <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Graduatuion"
+                                 id="graduatuion" name="education">
+                              <label class="form-check-label" for="graduatuion">
+                              Graduation
+                              </label>
+                           </div>
+                           <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Post Graduatuion"
+                                 id="post_graduatuion" name="education">
+                              <label class="form-check-label" for="post_graduatuion">
+                              Post Graduation
+                              </label>
+                           </div>
+                           <div class="education-error">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-contact">
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <label for="address" class="form-label">Address:</label>
+                              <div class="form-floating">
+                                 <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="address"></textarea>
+                                 <label for="floatingTextarea">Where you live</label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-contact d-flex justify-content-center ">
+                        <button type="submit" class="btn btn-success me-4 px-5 py-2" id="">Submit</button>
+                        <button type="button" class="btn btn-danger px-5 py-2" id="resetbtn">Reset</button>
+                     </div>
+                     <div class="form-contact d-flex justify-content-center ">
+
+                        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                           aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog modal-dialog-scrollable ">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Profile
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                       aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body p-1">
+                                    <!-- <pre id="viewPrint"></pre> -->
+                                    <div class="studentProfile d-flex">
+                                          
+                                          <div class="col-md-12">
+                                             <table class="table table-hover">
+                                                <tbody>
+                                                   <tr>
+                                                      <th scope="col" class="ps-5">First  Name :</th>
+                                                      <td><p id="studentName"></p></td>
+                                                   </tr>
+                                                   <tr>
+                                                    <th scope="col" class="ps-5">Last Name :</th>
+                                                    <td><p id="lName"></p></td>
+                                                 </tr>
+                                                   <tr>
+                                                      <th scope="col" class="ps-5">Gender :</th>
+                                                      <td><p id="studentGender"></p></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="col" class="ps-5">Age :</th>
+                                                      <td><p id="studentAge"></p></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="col" class="ps-5">Contact :</th>
+                                                      <td><p id="studentContact"></p></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="col" class="ps-5">Addmision Date :</th>
+                                                      <td><p id="studentAdate"></p></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="col" class="ps-5">Tech :</th>
+                                                      <td><p id="studentTech"></p></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="col" class="ps-5">Education :</th>
+                                                      <td><p id="studentEdu"></p></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="col" class="ps-5">Address :</th>
+                                                      <td><p id="studentAddress"></p></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                       
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-primary"
+                                          data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                  </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <table class="table table-striped table-hover main-table" id="tableData">
+            <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Gender</th>
+                  <th>Age</th>
+                  <th>Phone Number</th>
+                  <th>Admission Date</th>
+                  <th>Tech</th>
+                  <th>Education</th>
+                  <th colspan="4">Action</th>
+               </tr>
+            </thead>
+            <tbody class="table-group-divider">
+            </tbody>
+         </table>
+         <script>
+                  // Get all the checkboxes with the name "education"
+                      const educationCheckboxes = document.querySelectorAll('input[name="education"]');
+            // Loop through each checkbox
+            educationCheckboxes.forEach(function (checkbox, index){
+                // Add onchange event to checkbox
+                checkbox.addEventListener("change", function () {
+                    if (checkbox.checked) {
+                        // Loop through all previous checkboxes and check them
+                        for (let i = 0; i < index; i++) {
+                            educationCheckboxes[i].checked = true;
+                        }}
+                    else {
+                        // Loop through all previous checkboxes and check them
+                        for (let i = 0; i < educationCheckboxes.length; i++) {
+                            educationCheckboxes[i].checked = false;}} }); });
+
+            const form = document.querySelector('#myForm');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                let isValid = customValidate(form);
+                console.log(isValid);
+                if (isValid) {
+                    (form.hasAttribute('data-update-index') && form.getAttribute("data-update-index").length) ? alert("Record updated successfully!") : alert("Form submitted successfully!");
+                    const formData = [];
+                    const inputs = form.querySelectorAll('input');
+                    const textarea = form.querySelector('#address').value;
+                    const select = form.querySelector('#tech');
+                    for (let i = 0; i < inputs.length; i++) {
+                        const input = inputs[i];
+                        if (input.type === 'radio' && !input.checked || input.type === 'checkbox' && !input.checked) {
+                            continue; // skip unchecked radio buttons
+                        }
+                        formData.push({ [input.id]: input.value });
+                    }
+                    if (select.selectedIndex !== -1) {
+                        formData.push({ [select.id]: select.value });
+                    }
+                    (form.hasAttribute('data-update-index') && form.getAttribute("data-update-index").length) ? updateToLocalStorage(form.getAttribute("data-update-index")) : addToLocalStorage();
+                    displayDataInTable();
+                    reset();
+                }
+            });
+
+            function updateToLocalStorage(index) {
+                // Get input values
+                let firstName = document.getElementById("fname").value;
+                let lastName = document.getElementById("lname").value;
+                let gender = document.querySelector('input[name="gender"]:checked');
+                let age = document.getElementById("age").value;
+                let phone = document.getElementById("inputContact").value;
+                let admissionDate = document.getElementById("date").value;
+                let tech = document.getElementById("tech").value;
+                let address = document.getElementById("address").value;
+                let education = [];
+                let checkboxes = document.querySelectorAll('input[name="education"]:checked');
+                checkboxes.forEach((checkbox) => education.push(checkbox.value));
+
+                // Create student object
+                const student = {
+                    firstName: firstName,
+                    lastName: lastName,
+                    gender: gender ? gender.value : "",
+                    age: age,
+                    phone: phone,
+                    admissionDate: admissionDate,
+                    tech: tech,
+                    education: education,
+                    address: address,
+                };
+
+                // Get existing data from local storage
+                const students = JSON.parse(localStorage.getItem("students")) || [];
+
+                // Add new student to the array
+                students[index] = student;
+                // Store the updated data in local storage
+                localStorage.setItem("students", JSON.stringify(students));
+                form.removeAttribute('data-update-index');
+            }
+
+            function addToLocalStorage() {
+                // Get input values
+                let firstName = document.getElementById("fname").value;
+                let lastName = document.getElementById("lname").value;
+                let gender = document.querySelector('input[name="gender"]:checked');
+                let age = document.getElementById("age").value;
+                let phone = document.getElementById("inputContact").value;
+                let admissionDate = document.getElementById("date").value;
+                let tech = document.getElementById("tech").value;
+                let address = document.getElementById("address").value;
+                let education = [];
+
+                let checkboxes = document.querySelectorAll('input[name="education"]:checked');
+                checkboxes.forEach((checkbox) => education.push(checkbox.value));
+
+                // Create student object
+                const student = {
+                    firstName: firstName,
+                    lastName: lastName,
+                    gender: gender ? gender.value : "",
+                    age: age,
+                    phone: phone,
+                    admissionDate: admissionDate,
+                    tech: tech,
+                    education: education,
+                    address: address,
+                };
+
+                // Get existing data from local storage
+                const students = JSON.parse(localStorage.getItem("students")) || [];
+
+                // Add new student to the array
+                students.push(student);
+                // Store the updated data in local storage
+                localStorage.setItem("students", JSON.stringify(students));
+
+            }
+            const resetbtn = document.querySelector('#resetbtn');
+            resetbtn.addEventListener('click', function (event) {
+                reset();
+            });
+
+            function reset() {
+                document.getElementById("myForm").removeAttribute('data-update-index');
+                document.getElementById("myForm").reset();
+            }
+            function displayDataInTable() {
+                // Retrieve data from local storage
+                const data = JSON.parse(localStorage.getItem('students'));
+                const table = document.querySelector('#tableData tbody');
+                // Set the tbody's innerHTML to an empty string
+                table.innerHTML = "";
+
+                data.forEach(function (student, index) {
+                    const row = document.createElement('tr');
+                    const { firstName, lastName, gender, age, phone, admissionDate, tech, education, action } = student;
+                    const name = `${firstName} ${lastName}`; // Concatenate firstname and lastname
+                    const cells = [name, gender, age, phone, admissionDate, tech, education, action];
+                    cells.forEach(cell => {
+                        const td = document.createElement('td');
+                        td.textContent = cell;
+                        row.appendChild(td);
+                    });
+                    // Add view button
+                    const viewBtnTd = document.createElement('td');
+                    const viewBtn = document.createElement('button');
+                    viewBtn.classList.add('viewBtn');
+                    viewBtn.innerHTML = '<i class="fa-solid fa-eye" onclick="showView()" data-key-id="' + index + '" ></i>';
+                    viewBtnTd.appendChild(viewBtn);
+                    row.appendChild(viewBtnTd);
+                    // Add edit button
+                    const editBtnTd = document.createElement('td');
+                    const editBtn = document.createElement('button');
+                    editBtn.classList.add('editBtn');
+                    editBtn.innerHTML = '<i class="fa-solid fa-pen-to-square editBtn " onclick="edit()" data-key-id="' + index + '"></i>';
+                    editBtnTd.appendChild(editBtn);
+                    row.appendChild(editBtnTd);
+
+                    // Add delete button
+                    const deleteBtnTd = document.createElement('td');
+                    const deleteBtn = document.createElement('button');
+                    deleteBtn.classList.add('deleteBtn');
+                    deleteBtn.innerHTML = '<i class="fa-solid fa-trash deleteBtn" onclick="del()" data-key-id="' + index + '"></i>';
+                    deleteBtnTd.appendChild(deleteBtn);
+                    row.appendChild(deleteBtnTd);
+                    table.appendChild(row);
+                });
+            }
+
+            
+
+            function customValidate(form) {
+                // Remove existing error messages
+                var errorLabels = form.querySelectorAll(".error");
+                for (var i = 0; i < errorLabels.length; i++) {
+                    errorLabels[i].parentNode.removeChild(errorLabels[i]);
+                }
+                // Validate each form element
+                var isValid = true;
+                var formElements = form.elements;
+                for (var i = 0; i < formElements.length; i++) {
+                    var element = formElements[i];
+                    if (element.getAttribute("type") != "button" && element.getAttribute("type") != "submit" && element.getAttribute("id") != "address") {
+                        // Show validation message
+                        var message = "This field is required.";
+                        var errorLabel = document.createElement("label");
+                        errorLabel.setAttribute("for", element.id);
+                        errorLabel.classList.add("error");
+                        errorLabel.innerHTML = message;
+                        if (element.getAttribute("id") == "fname" || element.getAttribute("id") == "lname") {
+                            if (!validateName(element.value) && !validateName(element.value)) {
+                                var message = "Please enter a valid name.";
+                                var errorLabel = document.createElement("label");
+                                errorLabel.setAttribute("for", element.id);
+                                errorLabel.classList.add("error");
+                                errorLabel.innerHTML = message;
+                                element.parentNode.insertBefore(errorLabel, element.nextSibling);
+                                isValid = false;
+                            }
+                        }
+                        else if (element.getAttribute("id") == "inputContact") {
+                            const regex = /^\d{10}$/;
+                            if (!element.value) {
+                                insertAfter(errorLabel, element.parentElement);
+                                isValid = false;
+                            }
+                            else if (element.value.length != 10 || !regex.test(element.value)) {
+                                var message = "Please enter a valid phone number.";
+                                var errorLabel = document.createElement("label");
+                                errorLabel.setAttribute("for", element.id);
+                                errorLabel.classList.add("error");
+                                errorLabel.innerHTML = message;
+                                insertAfter(errorLabel, element.parentElement);
+                                isValid = false;
+                            }
+                        }
+                        else if (element.getAttribute("name") == "gender") {
+                            // Check if gender is selected
+                            var genderoptions = document.querySelectorAll('input[name="gender"]');
+                            let genderSelected = false;
+                            for (let i = 0; i < genderoptions.length; i++) {
+                                if (genderoptions[i].checked) {
+                                    genderSelected = true;
+                                    break;
+                                }
+                            }
+                            if (!genderSelected) {
+                                const gendererror = document.querySelector('.gender-error');
+                                gendererror.innerHTML = '<label class="error" for=' + element.id + '>Please select a gender</label>';
+                                isValid = false;
+                            }
+                        }
+                        else if (element.getAttribute("name") == "education") {
+                            var educationoptions = document.querySelectorAll('input[name="education"]');
+                            let educationSelected = false;
+                            for (let i = 0; i < genderoptions.length; i++) {
+                                if (educationoptions[i].checked) {
+                                    educationSelected = true;
+                                    break;
+                                }
+                            }
+                            if (!educationSelected) {
+                                isValid = false;
+                                const educationerror = document.querySelector('.education-error');
+                                educationerror.innerHTML = '<label class="error" for=' + element.id + '>Please select atleast one option.</label>';
+                            }
+                        }
+                        else if (!element.value) {
+                            isValid = false;
+                            element.parentNode.insertBefore(errorLabel, element.nextSibling);
+                        }
+                    }
+                }
+                return isValid;
+            }
+            function insertAfter(newNode, referenceNode) {
+                referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+            }
+            function validateName(name) {
+                const regex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+                return regex.test(name);
+            }
+            const firstNameInput = document.getElementById("fname");
+            const lastNameInput = document.getElementById("lname");
+            const genderInput = document.querySelector('input[name="gender"]:checked');
+            const ageInput = document.getElementById("age");
+            const phoneInput = document.getElementById("inputContact");
+            const admissionDateInput = document.getElementById("date");
+            const techInput = document.getElementById("tech");
+            const address = document.getElementById("address");
+            const educationInput = [];
+            const checkboxesInput = document.querySelectorAll('input[name="Education"]:checked');
+            // Get the table element
+            const table = document.getElementById("tableData");
+            function del() { 
+                const row = event.target.closest('tr');
+                // Get the value of the custom attribute
+                var index = event.target.getAttribute("data-key-id");
+                // Get existing data from local storage
+                var students = JSON.parse(localStorage.getItem("students")) || [];
+                if (students.length) {
+                    students.splice(index, 1);
+                    // Store the updated data in local storage
+                    localStorage.setItem("students", JSON.stringify(students));
+                    row.remove();
+                }
+            }
+            //  function for edit form data
+            function edit() {
+                // Get the value of the custom attribute
+                var index = event.target.getAttribute("data-key-id");
+                // Get existing data from local storage
+                var students = JSON.parse(localStorage.getItem("students"));
+                if (students.length) {
+                    reset();
+                    student = students[index];
+                    const row = event.target.closest('tr');
+                    
+                    var gender = document.getElementById(student.gender);
+                    // Set the checked property to true
+                    gender.checked = true;
+                    ageInput.value = student.age;
+                    phoneInput.value = student.phone;
+                    admissionDateInput.value = student.admissionDate;
+                    techInput.value = student.tech;
+                    student.education.forEach(function (education, index) {
+                        var education = document.querySelector('input[value="' + education + '"]');
+                        education.checked = true;
+                    });
+                    firstNameInput.value = student.firstName;
+                    lastNameInput.value = student.lastName;
+                    address.value = student.address;
+                    form.setAttribute("data-update-index", index);
+                    // update any other form fields with row data
+                }
+            }
+            //  function for show student view
+            function showView() {
+                var index = event.target.getAttribute("data-key-id");
+                const data = JSON.parse(localStorage.getItem("students"));
+                console.log(data[index].gender);
+                document.getElementById("studentName").innerHTML = data[index].firstName
+                document.getElementById("lName").innerHTML = data[index].lastName
+                document.getElementById("studentGender").innerHTML = data[index].gender
+                document.getElementById("studentAge").innerHTML = data[index].age
+                document.getElementById("studentContact").innerHTML = data[index].phone
+                document.getElementById("studentAdate").innerHTML = data[index].admissionDate
+                document.getElementById("studentTech").innerHTML = data[index].tech
+                document.getElementById("studentEdu").innerHTML = data[index].education
+                if(data[index].address == "")
+                {
+                    document.getElementById("studentAddress").innerHTML = "Null"
+                }
+                else
+                document.getElementById("studentAddress").innerHTML = data[index].address
+                        $('#exampleModal').modal('show');
+                    }   
+                    // Call the function to display data in the table
+            displayDataInTable();
+         </script>
+      </div>
+   </body>
+</html>
