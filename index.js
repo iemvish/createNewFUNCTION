@@ -12,6 +12,8 @@
 //     }
 // }
 
+// const M = require("minimatch")
+
 // let student = {
 //     name : 'shivani',
 //     lastName: 'sharma',
@@ -59,7 +61,7 @@
 // let maxnum = Math.max(...sortarr)
 // maxnum += 1
 // let maxindex = arr.indexOf(maxnum)
-// console.log(maxnum)
+// // console.log(maxnum)
 
 // function findMaxNumber(arrayName,position){
 //     let maxnum
@@ -74,7 +76,7 @@
 //     }
 
 // }
-// findMaxNumber(arr,1)
+// findMaxNumber(arr,3)
 
 // let arr = [1,2,0,2,4,0,4,2,0,1,5]
 // let store = []
@@ -147,17 +149,17 @@
 
 // function palindrome(str){
 //       const splitvalue=str.toString().split('');
-//       console.log(splitvalue)
+//     //   console.log(splitvalue)
 //       const revalue=splitvalue.reverse();
 //       const joinvalue=revalue.join("");
 //       if(str == joinvalue){
-//           console.log("it is palidrome");
+//           console.log("it is palindrome");
 //       }
 //       else{
-//           console.log("it is not palidrome");
+//           console.log("it is not palindrome");
 //       }
 //       }
-//       palindrome(123);
+//       palindrome(121);
 
 // find length of last string
 // const str=" this is a ffmoggggon           ";
@@ -226,11 +228,11 @@ const Person = {
 // 	else
 // 		console.log(n + " is not prime");
 // }
-// p(10)
+// p(2)
 
 
 // console.log("Prime number from 10 to 30")
-// for (var i = 2; i <= 30; i++) {
+// for (var i = 2; i <= 30; i++) {                           
 //       var notPrime = false;
 //       for (var j = 2; j <= i/2; j++) {
 //           if (i%j===0) {
@@ -242,15 +244,267 @@ const Person = {
 //       }
 //   }
 
-arr = [1,3]
-arr2 = [2,3,4,1,7]
-arr3 = arr.concat(arr2)
-arr3.sort((a,b)=>a-b)
-// console.log(arr3)
-store = []
-for(let i=0; i<=arr3.length-1; i++){
-      if(!store.includes(arr3[i])){
-            store.push(arr3[i])
-      }
-}
-console.log(store)
+// for(let i=2; i<=30; i++){
+//     let flag = false
+//     for(let j=2; j<=i/2; j++){
+//         if(i%j==0){
+//             flag = true
+//         }
+//     }
+//     if(flag == false){
+//         console.log(i)
+//     }
+// }
+
+
+// arr1 = [1,3]
+// arr4 = [2,3,4,1,7]
+
+// function concateArray(arr,arr2){
+// let arr3 = arr.concat(arr2)
+// arr3.sort((a,b)=>a-b)
+// // console.log(arr3)
+// store = []
+// for(let i=0; i<=arr3.length-1; i++){
+//       if(!store.includes(arr3[i])){
+//             store.push(arr3[i])
+//       }
+// }
+// console.log(store)}
+// concateArray(arr1,arr4)
+
+
+// let arr = [1,2,3,4,5,6]
+// function minMax(arr) {
+//     const res = []
+// 	let minNumber = Math.min(...arr)
+// 	let maxNumber = Math.max(...arr)
+// 	res.push(minNumber)
+//     res.push(maxNumber)
+// 	return res
+// }
+// console.log(minMax(arr))
+
+// function rev(n){
+//   let arr = n.split("") 
+//   let store = ""
+//   let store2 = ""
+//   for(let i=arr.length-1; i>=0; i--){
+//         store += arr[i]
+//   }
+//   let pass = store.split(' ')
+//   for(let i=pass.length-1; i>=0; i--){
+//     store2 += pass[i]
+//     store2 += " "
+// }
+//   console.log(store2)
+// }
+// rev("Vishal Kumar");
+
+// let arr = [1,3,4,5,0,1,2,3,2,1]
+// let res = arr.lastIndexOf(0)
+// arr.splice(res+1,0,55,66)
+// console.log(arr)
+
+// function checkPalindrome(str) {  
+//     // get the total length of the words   12 21 1221
+//     const len = str.length;  
+
+//     // Use for loop to divide the words into 2 half  
+//     for (let i = 0; i < len / 2; i++) {  
+//         // validate the first and last characters are the same  
+//         if (str[i] !== str[len - 1 - i]) {  
+//           console.log( 'It is not palindrome'); 
+//           return;
+//         }  
+//     }  
+//   // If they are not the same, then it is not a palindrome
+//   console.log( 'It is a palindrome'); 
+// }  
+
+// // // take input of the string or number from the prompt  
+// const string = 1211
+
+// const value = checkPalindrome(string);  
+
+// // log it's value in the console
+// console.log(value);     
+
+// let app = new Date()
+// let store = "Date "+app.getMonth()+" "+app.getFullYear()
+// const options = {
+//     year: 'numeric',
+//     month: 'numeric',
+//     day:  'numeric'
+// }
+// const fdate = app.toLocaleDateString('en-US', options)
+// console.log(fdate)
+
+
+// function findFactorial(number){
+// let fact = 1;
+//     if(number < 1){
+//         console.log("Please Enter Positive Number!!!!!")
+//     }
+//     else{
+//         for (i = 1; i <= number; i++) {
+//             fact *= i;
+//         }
+//         console.log(fact)
+
+//     }
+
+// }
+// findFactorial(4)
+
+
+
+// program to generate fibonacci series up to n terms
+
+// function findFibonaci(number){
+// let n1 = 0, n2 = 1, nextTerm;
+// console.log('Fibonacci Series:');
+// for (let i = 1; i <= number; i++) {
+//     console.log(n1);
+//     nextTerm = n1 + n2;
+//     n1 = n2;-y/
+//     n2 = nextTerm;
+// }}
+// findFibonaci(7)
+
+// function findFibonaci(n){
+//       let n1= 0, n2=1,next 
+//       for(let i=0; i<n; i++){
+//             console.log(n1)
+//             next = n1+n2
+//             n1 = n2
+//             n2 = next
+//       }
+// }
+// findFibonaci(5)
+
+
+// function findArm(num) {
+//       let sum = 0
+//       let a = num.toString().split("")
+//       a.map(function (item) {
+//             let res = item * item * item
+//             sum += res
+//       })
+//       if (sum == num) {
+//             console.log("ARMSTRONG")
+//       }
+//       else {
+//             console.log("not")
+//       }
+
+// }
+// findArm(152)
+
+
+// let str= "aabbcxxc"
+// let splitStr = str.split('')
+// // console.log(splitStr)
+// let result = splitStr.reduce(function(acc,current){
+//     acc[current] = (acc[current] || 0) +1;
+//     return acc
+//     // console.log(acc)
+// },{})
+// console.log(result)
+
+
+
+// let str = "aabbcxxc";
+// let result = new Map();
+// str.split('').map(function(char) {
+//   result.set(char, (result.get(char) || 0) + 1);
+// });
+// console.log(result);
+
+// let str = "aabbrrr";
+// let result = new Map();
+
+// str.split('').map(function(char) {
+//   result.set(char, (result.get(char) || 0) + 1);
+// });
+
+// let formattedResult = Array.from(result).map(function(pair) {
+//   return pair.join(' : ');
+// });
+
+// console.log(formattedResult);
+
+// let arr = [1,1,3,4,3,4,5,6,7,8]
+// let sortArr = arr.sort((a,b) => {a-b})
+// sortArr.reduce(function(acc,current){
+
+
+// },0)
+// console.log(store)
+
+
+// let n = 6;
+// let str = ""
+// for (let i = 1; i <= n; i++) {//outer forloop
+//       for (let j = 1; j <= n - i; j++) {
+//             str += " "
+//       }
+//       for (let k = i; k >= 1; k--) {//inner for loops
+//             str += k
+//       }
+//       for (let l = 2; l <= i; l++) {
+//             str += l
+//       }
+//       str += "\n"
+// }
+// console.log(str)
+
+
+
+// ############# PRINT UNDUPLICATED VALUE ########################
+// let arr = [1,1,5,2,2,4,8,5,133]
+
+// function printUnduplicate(nums){
+// let count = {}
+// let store = []
+// for (let i = 0; i < nums.length; i++) {
+//   if (count[nums[i]]) {
+//     count[nums[i]]++
+//   } else {
+//     count[nums[i]] = 1
+//   }
+// }
+// for (let i = 0; i < nums.length; i++) {
+//   if (count[nums[i]] === 1) {
+//     store.push(nums[i])
+//   }
+// }
+// let res = store.sort(function(a, b){return a - b})
+// return res
+// }
+// console.log(printUnduplicate(arr))
+
+
+// var array = [1, 1, 2,7, 3, 3, 5, 6, 7, 7, 7, 8, 9];
+//       var unique = [];
+//       for (let i = 0; i < array.length; i++) {
+//          if (array.lastIndexOf(array[i]) === array.indexOf(array[i])) {
+//             unique.push(array[i]);
+//          }
+//       }
+//       console.log("After filtering: " + unique);
+
+var twoSum = function(nums, target) {
+      let result = []
+        for(let i=0; i<nums.length; i++){
+         let first = nums.indexOf(nums[i])
+         let second = nums.lastIndexOf(nums[i+1])
+         if(nums[i] + nums[i+1] == target){
+           result.push(first)
+           result.push(second)
+         }
+        }
+        return result
+    };
+    let numss = [3,2,3], targett = 5
+    console.log(twoSum(numss,targett))
